@@ -1,9 +1,12 @@
 {
   "name": "the-meal-api",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Matheus Ribeiro <matt.ribeiro14@outlook.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matheus-rib/the-meal-api"
+  },
   "devDependencies": {
     "@babel/preset-typescript": "^7.12.7",
     "@types/express": "^4.17.11",
