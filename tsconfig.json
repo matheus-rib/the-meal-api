@@ -15,7 +15,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": false,
-    "removeComments": true
+    "removeComments": true,
+    "resolveJsonModule": true
   },
   "include": [
     "src/**/*"
