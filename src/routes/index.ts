@@ -1,8 +1,6 @@
 import { Router } from 'express'
 import * as packageJson from '../../package.json'
 
-console.log(packageJson)
-
 const router = Router()
 
 router.get('/', (req, res) => {
