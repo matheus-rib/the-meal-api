@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  test:
+    image: node:12-alpine
+    user: '1000'
+    command: yarn test
+    environment:
+      DATA_PROVIDER_BASE_URL: data_provider_base_url
+
+    volumes:
+      - ./:/app
+    working_dir: /app
