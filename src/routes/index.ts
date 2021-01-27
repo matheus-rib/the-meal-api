@@ -1,5 +1,7 @@
 import { Router } from 'express'
-import packageJson from '../../package.json'
+import * as packageJson from '../../package.json'
+
+console.log(packageJson)
 
 const router = Router()
 
