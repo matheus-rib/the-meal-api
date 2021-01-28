@@ -17,6 +17,7 @@ async function categoriesList (req: Request, res: Response): Promise<void> {
 async function mealsInCategoryList (req: Request, res: Response): Promise<void> {
   const { categoryName } = req.params
   const { data } = await mealDataProviderServices.listByCategories(categoryName)
+  if (!data?.meals) throw new RecordNotFoundError('Category', { name: categoryName })
   res.json(data.meals)
 }
 
