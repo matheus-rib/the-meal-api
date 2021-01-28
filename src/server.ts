@@ -1,9 +1,10 @@
 import 'reflect-metadata'
 import api from './config/Api'
+const port = process.env.PORT
 
 try {
-  api.server.listen(80, () => {
-    console.log('🚀 API ready at http://localhost:80/')
+  api.server.listen(port, () => {
+    console.log(`🚀 API ready at http://localhost:${port}/`)
   })
 } catch (e) {
   console.log(e)

@@ -47,9 +47,11 @@
     "response-time": "^2.3.2"
   },
   "scripts": {
+    "start": "node /usr/src/app/build/src/server.js",
     "dev": "nodemon --watch 'src/' --exec \"ts-node src/server.ts\" -e ts",
     "test": "jest --maxWorkers=1",
     "typeorm-ts": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
-    "docker:test": "docker-compose -p api-meal-test -f docker-compose-test.yml run --rm test"
+    "docker:test": "docker-compose -p api-meal-test -f docker-compose-test.yml run --rm test",
+    "tsc": "tsc -p tsconfig.json"
   }
 }
