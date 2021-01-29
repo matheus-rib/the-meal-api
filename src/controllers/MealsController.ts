@@ -32,7 +32,7 @@ async function show (req: Request, res: Response): Promise<void> {
 async function random (req: Request, res: Response): Promise<void> {
   const { data } = await mealDataProviderServices.random()
 
-  if (!data?.meals?.[0]) throw new ApiError({ code: 'FailedToFetchRandomMeal', message: 'Failed to fetch random meal' })
+  if (!data?.meals?.[0]) throw new ApiError({ code: 'failedToFetchRandomMeal', message: 'Failed to fetch random meal' })
   res.json(data.meals[0])
 }
 
